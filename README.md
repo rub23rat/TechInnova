@@ -48,6 +48,22 @@
         create mode 100644 README.md
         create mode 100644 capturas/Imagen1.png
     ```
+    ```
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
+    $ git log
+    commit 3d9c640129bc05108034fa11aa13e034e6439762 (HEAD -> master)
+    Author: Ruben Rat <rubenrat@gmail.com>
+    Date:   Thu Jan 18 08:58:59 2024 +0100
+
+        README.md
+
+    commit bac41f2c25d5e65d262d5e02b17612f62abbc03d
+    Author: Ruben Rat <rubenrat@gmail.com>
+    Date:   Thu Jan 18 08:53:46 2024 +0100
+
+        README.md
+
+    ```
 
 1.  Creación del repositorio en Github
     ![](/capturas/Imagen1.png)
