@@ -67,3 +67,38 @@
 
 1.  Creación del repositorio en Github
     ![](/capturas/Imagen1.png)
+
+1. Añadir el remoto al repositorio local (branch, remote)
+    ```
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
+    $ git branch -M main
+    ```
+
+1. Subir el repositorio a Github (push)
+    ```
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
+    $ git remote add origin https://github.com/rub23rat/TechInnova.git
+
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
+    $ git push -u origin main
+        Enumerating objects: 11, done.
+        Counting objects: 100% (11/11), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (10/10), done.
+        Writing objects: 100% (11/11), 128.47 KiB | 11.68 MiB/s, done.
+        Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (2/2), done.
+        To https://github.com/rub23rat/TechInnova.git
+        * [new branch]      main -> main
+        branch 'main' set up to track 'origin/main'.
+    ```
+
+1. Comprobar que está subido a Github
+    ![](/capturas/Imagen2.png)
+
+### Publicación en Github Pages
+
+1. Configurar el repositorio para que publique el directorio raíz en Github Pages
+    ![](/capturas/imagen3.png)
+
+1. Mostrar los despliegues (deployments)
