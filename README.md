@@ -16,7 +16,8 @@
     ```
 
 1. Creación del repositorio en nuestro ordenador (init)
-
+    
+    
     ```
     git init TechInnova
     cd TechInnova
@@ -39,4 +40,14 @@
     (use "git rm --cached <file>..." to unstage)
             new file:   README.md
     ```
+    ```
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
+    $ git commit -m README.md
+        [master (root-commit) bac41f2] README.md
+        2 files changed, 42 insertions(+)
+        create mode 100644 README.md
+        create mode 100644 capturas/Imagen1.png
+    ```
+
+1.  Creación del repositorio en Github
     ![](/capturas/Imagen1.png)
