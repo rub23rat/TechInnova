@@ -1,7 +1,7 @@
 ## Ruben David Rat
 ## Lenguaje de Marcas
 ## IES Aguadulce 2023-2024
-## Enlace a la web (Ver más abajo):
+## https://rub23rat.github.io/TechInnova/
 
 ### Uso de Git mediante la terminal git bash. Las instrucciones y sus resultados deben mostrar como bloques de código markdown:
 
@@ -67,6 +67,7 @@
 
 1.  Creación del repositorio en Github
     ![](/capturas/Imagen1.png)
+    ![](/capturas/imagen7.png)
 
 1. Añadir el remoto al repositorio local (branch, remote)
     ```
@@ -102,3 +103,37 @@
     ![](/capturas/imagen3.png)
 
 1. Mostrar los despliegues (deployments)
+    
+    Antes de nada hay que hacer un commit de todos los archivos y a continuación publicarlo a nuestro repositorio:
+    ```
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
+    $ git add .
+
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
+    $ git commit -m .
+    [main 9a81b12] .
+    4 files changed, 47 insertions(+), 1 deletion(-)
+    create mode 100644 capturas/Imagen2.png
+    create mode 100644 capturas/imagen3.png
+    create mode 100644 index.html
+
+    rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
+    $ git status
+    On branch main
+    Your branch is ahead of 'origin/main' by 1 commit.
+    (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+    ```
+    ![](/capturas/imagen4.png)
+
+1. Mostrar la página web
+
+    ![](/capturas/imagen5.png)
+
+1. Añadir en el primer apartado, Identificación, el enlace a la publicación del sitio web
+    ![](/capturas/imagen6.png)
+
+### Uso de Git mediante la interfaz de VSCode
+
+1. Creación de otro commit
