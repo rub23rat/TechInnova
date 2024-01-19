@@ -6,7 +6,8 @@
 ### Uso de Git mediante la terminal git bash. Las instrucciones y sus resultados deben mostrar como bloques de código markdown:
 
 1. Configuración de usuario
-
+    
+    Antes de crear el repositorio creo a los usuarios
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git config --global user.name "Ruben Rat"
@@ -137,3 +138,8 @@
 ### Uso de Git mediante la interfaz de VSCode
 
 1. Creación de otro commit
+
+    ![](/capturas/imagen8.png)
+
+1. Subir el repositorio a Github
+    
