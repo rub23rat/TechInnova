@@ -126,7 +126,7 @@
 
     nothing to commit, working tree clean
     ```
-    ![](/capturas/imagen4.png)
+    ![](/capturas/imagen9.png)
 
 1. Mostrar la página web
 
