@@ -7,30 +7,39 @@
 
 1. Configuración de usuario
     
-    Antes de crear el repositorio creo a los usuarios
+    Antes de crear el repositorio hay que crear al usuario de este:
+
+    Primero se debe establecer el nombre del usuario:
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git config --global user.name "Ruben Rat"
-
+    ```
+    Después, se debe establecer el correo de este usuario
+    ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git config --global user.email "rubenrat@gmail.com"
     ```
 
 1. Creación del repositorio en nuestro ordenador (init)
     
-    
+    Estando en la ruta en la que queremos que esté nuestro repositorio ponemos el siguiente comando y se creará:
     ```
     git init TechInnova
+    ```
+    A continuación nos metemos dentro:
+    ```
     cd TechInnova
     ```
 
 1.  Creación de un commit inicial (add, status, commit, log)
+
+    Estando dentro de la ruta en la que se encuentre nuestro repositorio creamos el archivo "readme". Una vez ya creado se procederá a abrir vscode habriendose desde nuestro repositorio. Al final añadimos el archivo "readme" a nuestro git.
     ```
     touch README.md
     code . &
     git add README.md
     ```
-
+    Vemos el estado de git:
     ```
     $ git status
     On branch master
@@ -41,6 +50,7 @@
     (use "git rm --cached <file>..." to unstage)
             new file:   README.md
     ```
+    En el caso anterior me estaba diciendo que aun no he realizado copias de seguridad por lo cual ahora realizaremos esa copia de seguridad:
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git commit -m README.md
@@ -49,6 +59,7 @@
         create mode 100644 README.md
         create mode 100644 capturas/Imagen1.png
     ```
+    A continuación vemos las copias de seguridad que hemos realizado de esta forma:
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git log
@@ -67,16 +78,26 @@
     ```
 
 1.  Creación del repositorio en Github
+    
+    Establecemos el nombre de nuestro repositorio en GitHub y lo creamos:
+
     ![](/capturas/Imagen1.png)
+
+    Añado al colaborador de mi repositorio:
+
     ![](/capturas/imagen7.png)
 
 1. Añadir el remoto al repositorio local (branch, remote)
+
+    De esta forma añado de forma remota a mi repositorio local:
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (master)
     $ git branch -M main
     ```
 
 1. Subir el repositorio a Github (push)
+
+    Para subir nuestro repositorio a GitHub debemos conectarlo con este. Tenemos la suerte de que GitHub nos facilite esta conexión remota mediante un enlace que ellos mismos la otorgan. Primero de todo establecemos la conexión con GitHub con el enlace personalizado de cada uno y después subimos nuestro repositorio a GitHub: 
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
     $ git remote add origin https://github.com/rub23rat/TechInnova.git
@@ -96,16 +117,20 @@
     ```
 
 1. Comprobar que está subido a Github
+
+    Una vez realizada la conexión y subido nuestro repositorio, podemos observar que se encuentran nuestros archivos creados posteriormente:
     ![](/capturas/Imagen2.png)
 
 ### Publicación en Github Pages
 
 1. Configurar el repositorio para que publique el directorio raíz en Github Pages
+    
+    Debemos ir a la parte de ajustes de nuestro repositorio y entrando en el apartado "pages", elegimos la rama y el directorio raiz. Por ultimo queda guardar los cambios:
     ![](/capturas/imagen3.png)
 
 1. Mostrar los despliegues (deployments)
     
-    Antes de nada hay que hacer un commit de todos los archivos y a continuación publicarlo a nuestro repositorio:
+    Antes de nada se recomienda crear un archivo index.html con algo de contenido dentro de este y a continuación hacer una copia de seguridad de todos los archivos y subirlo a nuestro repositorio:
     ```
     rub11@DESKTOP-L84U2DO MINGW64 ~/Documents/TechInnova (main)
     $ git add .
@@ -126,20 +151,41 @@
 
     nothing to commit, working tree clean
     ```
+    Para ver los despliegues, en el apartado de "code" vemos que se encuentra en la parte de la derecha:
+    ![](/capturas/imagen13.png)
+
+    Una vez dentro podremos ver los despliegues:
+
     ![](/capturas/imagen9.png)
 
 1. Mostrar la página web
 
+    Al tener nuestro index subido y nuestro enlace ya creado de GitHub Pages podemos acceder a nuestro index con el enlace:
+
     ![](/capturas/imagen5.png)
 
 1. Añadir en el primer apartado, Identificación, el enlace a la publicación del sitio web
+
+    Aqui ponemos nuestro enlace para ver nuestra página:
     ![](/capturas/imagen6.png)
 
 ### Uso de Git mediante la interfaz de VSCode
 
 1. Creación de otro commit
 
+    Para hacer un commit debemos de ir al apartado que esta en la parte izquierda. Una vez ahí
+
     ![](/capturas/imagen8.png)
 
 1. Subir el repositorio a Github
-    
+
+    ![](/capturas/imagen10.png)
+
+1. Comprobar que está subido a Github
+
+    ![](/capturas/imagen11.png)
+
+1. Ver el listado de commit desde Github
+
+    ![](/capturas/imagen12.png)
+

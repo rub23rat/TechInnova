@@ -1,0 +1,82 @@
+header{
+    background-image: url(/imagenes/techinnova.png);
+    text-align: center;
+    padding: 10% 10% 2% 10%;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 80px;
+    font-family: arial black;
+}
+a{
+    margin:13%;
+    font-size: 20px;
+    text-decoration: none;
+}
+div{
+    padding-top: 8%;
+}
+h2{
+    text-align: center;
+    font-family: arial;
+}
+#somos{
+    text-align: center;
+    font-family: arial;
+    margin: 0px 500px 0px 500px;
+}
+figure{
+    width: 25%;
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+}
+.izquierda{
+    margin-left: 230px;
+}
+img{
+    width: 100%;
+}
+figcaption{
+    font-family: arial;
+    text-align: center;
+    font-weight: bolder;
+}
+section{
+    font-family: arial;
+}
+.imagenes{
+    width: 100px;
+}
+table{
+    text-align: center;
+    margin: 0% auto;
+}
+tr,td,th,table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+form{
+    border: 1px solid black;
+    margin: 0 500px 0 500px;
+    padding: 1%;
+    border-radius: 25px;
+}
+legend{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+}
+fieldset{
+    border-radius: 25px;
+}
+textarea{
+    vertical-align: top;
+}
+.cajas{
+    width: 80%;
+}
+button{
+    margin-left: 230px;
+}

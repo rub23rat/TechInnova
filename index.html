@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechInnova</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>TechInnova</h1>
+    <header>
+        <h1>TECHINNOVA</h1>
+        <div>
+            <a href="#quienes_somos">Quiénes somos</a>
+            <a href="#productos">Productos</a>
+            <a href="#informacion">Información</a>
+        </div>
+    </header>
+    <section>
+        <h2 id="quienes_somos">¿Quiénes somos?</h2>
+        <p id="somos">TechInnova es una empresa innovadora que se especializa en la venta de productos tecnológicos de
+            última generación. Nos enfocamos en ofrecer soluciones tecnológicas avanzadas y productos de calidad para
+            satisfacer las necesidades de nuestros clientes en la era digital.
+        </p>
+        <br><br>
+        <figure class="izquierda">
+            <img src="/imagenes/dispositivos_hogar.png" alt="">
+            <figcaption>Dispositivos para el hogar</figcaption>
+            <p>Ofrecemos una amplia gama de dispositivos conectados, desde termostatos inteligentes hasta sistemas de
+                iluminación controlados por voz.
+            </p>
+        </figure>
+        <figure>
+            <img src="/imagenes/gadget.png" alt="">
+            <figcaption>Gadgets Tecnológicos</figcaption>
+            <p>Desde auriculares inalámbricos de alta gama hasta relojes inteligentes y cámaras de acción, nuestra
+                selección de gadgets satisface las demandas de los entusiastas de la tecnología.
+            </p>
+        </figure>
+        <figure>
+            <img src="/imagenes/portatiles.png" alt="">
+            <figcaption>Computadoras y Portátiles de Última Generación</figcaption>
+            <p>Equipos potentes, elegantes y confiabilidad en su rendimiento diario para satisfacer las necesidades
+                tanto de usuarios profesionales como de
+                entusiastas del gaming.
+            </p>
+        </figure>
+        <br><br>
+        <figure class="izquierda">
+            <img src="/imagenes/accesorios.png" alt="">
+            <figcaption>Accesorios Tecnológicos</figcaption>
+            <p>Fundas elegantes, teclados ergonómicos, y otros accesorios diseñados para complementar y mejorar la
+                experiencia tecnológica.
+            </p>
+        </figure>
+        <figure>
+            <img src="/imagenes/robotica.png" alt="">
+            <figcaption>Robótica Doméstica</figcaption>
+            <p>Desde aspiradoras robóticas hasta robots de compañía, ofrecemos soluciones robóticas para hacer la vida
+                cotidiana más fácil y divertida.
+            </p>
+        </figure>
+        <figure>
+            <img src="/imagenes/moviles.png" alt="">
+            <figcaption>Móviles de última generación</figcaption>
+            <p>Móviles potentes, elegantes y su respectiva seguridad para satisfacer las necesidades de usuarios
+                profesionales en muchos
+                ámbitos de la tecnología.
+            </p>
+        </figure>
+    </section>
+    <section>
+        <h2 id="productos">Productos</h2>
+        <table>
+            <tr>
+                <td></td>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="/imagenes/bombilla.png" alt="" class="imagenes"></td>
+                <td>Bombilla inteligente</td>
+                <td rowspan="2">Baja</td>
+                <td>Bombillas que pueden ser controladas a través de aplicaciones móviles para ajustar el brillo y el
+                    color</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td><img src="/imagenes/cargador.png" class="imagenes" alt=""></td>
+                <td>Cargador inalámbrico</td>
+                <td>Dispositivos que permiten cargar teléfonos y otros dispositivos sin necesidad de cables</td>
+                <td>25€</td>
+            </tr>
+            <tr>
+                <td><img src="/imagenes/portatil.png" alt="" class="imagenes"></td>
+                <td>Portatil profesional</td>
+                <td>Alta</td>
+                <td>Portatil ambientado en el ambito profesional y en el trabajo con buen rendimiento.</td>
+                <td>800€</td>
+            </tr>
+            <tr>
+                <td><img src="/imagenes/movil.png" alt="" class="imagenes"></td>
+                <td>Móvil</td>
+                <td rowspan="2">Medio</td>
+                <td>Dispositivo de uso personal o incluso para un ambito profesional</td>
+                <td rowspan="2">300€</td>
+            </tr>
+            <tr>
+                <td><img src="/imagenes/aspiradora.png" alt="" class="imagenes"></td>
+                <td>Aspiradora Robot</td>
+                <td>Este dispositivo limpia cada esquina de tu casa de forma automatica</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2 id="informacion">Información</h2>
+        <form>
+            <fieldset>
+                <legend>Formulario</legend>
+                <label>Nombre: <input type="text" class="cajas"></label>
+                <br>
+                <label for="">Producto: <input type="text" class="cajas"></label>
+                <br>
+                <label for="">Email: <input type="email" class="cajas"></label>
+                <br>
+                <label for="">Fecha: <input type="date" class="cajas"></label>
+                <br>
+                <label for="selecion">Idioma: </label>
+                <select name="" id="selecion">
+                    <option value="">Español</option>
+                    <option value="">Inglés</option>
+                    <option value="">Frances</option>
+                </select>
+                <br>
+                <label for="">Alta <input type="checkbox"></label>
+                <br>
+                <label for="">Medio <input type="checkbox"></label>
+                <br>
+                <label for="">Baja <input type="checkbox"></label>
+                <br>
+                <label for="miaria">Observaciones: <textarea id="miaria" class="cajas"></textarea></label>
+                <br><br>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
+
 </html>
